@@ -1,0 +1,21 @@
+# =============================================================================
+# Fuentes HDL — Pong sobre MicroBlaze V
+# Rutas relativas a la raiz del repositorio
+# =============================================================================
+
+# --- Subsistema VGA (reutilizado del Proyecto 1) ---
+src/hdl/div_frec.v
+src/hdl/debounce.v
+src/hdl/sync_signal.v
+src/hdl/mux2.v
+src/hdl/vga_controller.v
+src/hdl/pixel_mux.v
+# src/hdl/bram_dualport.v   -- no necesario: BRAM viene del Block Design
+# src/hdl/vram_writer.v     -- no necesario: MicroBlaze escribe directo por AXI
+
+# --- Block Design MicroBlaze V SoC ---
+BD/microblaze_v.bd
+
+# --- Top-level y lógica del juego ---
+src/hdl/top_pong_project.v top=top_pong_project
+# src/hdl/pong_game.v

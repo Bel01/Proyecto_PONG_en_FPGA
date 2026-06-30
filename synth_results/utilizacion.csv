@@ -1,0 +1,11 @@
+recurso,usado,disponible,util_pct
+Slice LUTs,12328,63400,19.44
+LUT as Logic,10990,63400,17.33
+LUT as Memory,1338,19000,7.04
+Slice Registers,12859,126800,10.14
+Slice,4769,15850,30.09
+Block RAM Tile,86,135,63.70
+DSPs,1,240,0.42
+Bonded IOB,95,210,45.24
+BUFGCTRL,9,32,28.13
+MMCME2_ADV,2,6,33.33

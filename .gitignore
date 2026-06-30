@@ -1,0 +1,95 @@
+### Hog .gitignore ###
+# IP: solo se versiona el .xci, no los archivos generados
+IP/*/*
+!IP/*/*.xci*
+
+# BD: se versiona el .bd + XCI de IPs + archivos de configuración (.prj para MIG)
+BD/*
+!BD/*.bd
+!BD/ip/
+BD/ip/*/*
+!BD/ip/*/*.xci
+!BD/ip/*/*.prj
+
+## Sistema operativo
+.DS_Store
+.DS_Store?
+.Trashes
+**.Trashes
+ehthumbs.db
+Thumbs.db
+
+## Miscelanea
+**.tmp
+!/.gitignore
+bin
+!bin/
+!bin/build_latest/
+!bin/build_latest/top_pong_project.bit
+!bin/build_latest/resource_usage.csv
+!bin/build_latest/resource_usage.rpt
+bin/pong_project-*/
+bin/bram_stub.elf
+gitk
+*~
+**.pyc
+Doc/*
+**.log
+DCPs/
+
+## Xilinx Vivado — proyectos generados por HoG
+**.str
+**.jou
+.Xil/
+.Xilinx/
+Projects/
+output/
+lastbuilt.txt
+SimulationLib/
+VivadoProject
+
+# Proyecto Vivado existente (regenerado por HoG en Projects/, no versionar)
+/pong_project/
+
+## ModelSim / simulacion
+transcript*
+work/
+.cxl*
+_*
+_Alert.txt
+_Log.txt
+_info
+**.bak
+**.mti
+**.mtp
+**.mpf
+**.wlf
+**.ini
+
+## Python
+__pycache__/
+*.py[cod]
+
+## Vivado — archivos generados adicionales
+**.pb
+**.xdc.ucf
+xvlog.pb
+
+## Vitis / Lopper — temporales generados automáticamente
+.rigel_lopper_temp_platform/
+.wsdata/
+.lock
+
+## Vivado — IPs duplicadas auto-generadas (BD solo referencia las _0)
+BD/ip/microblaze_v_not_calib_1/
+BD/ip/microblaze_v_reset_or_1/
+
+## Firmware / workspace exports
+src/sw/Firmware.zip
+src/sw/*.zip
+
+## Xilinx — simulación
+xsim.dir/
+
+## Claude Code
+.claude/settings.local.json

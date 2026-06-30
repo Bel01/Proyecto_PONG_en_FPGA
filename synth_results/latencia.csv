@@ -1,0 +1,7 @@
+metrica,valor,unidad
+Reloj,100.000,MHz
+Periodo,10.000,ns
+WNS,0.428,ns
+WHS,0.008,ns
+Retardo camino critico,9.572,ns
+Latencia efectiva (periodo-WNS),9.572,ns
